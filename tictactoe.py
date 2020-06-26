@@ -16,10 +16,10 @@ def player1_input():
     #Taking input from player 1
 
     p1 = 'wrong'
-    accept_range = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
-    while p1.isdigit() == False or p1 not in accept_range:
+    acceptable_range = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+    while p1.isdigit() == False or p1 not in acceptable_range:
         p1 = input('Player 1\'s turn. Choose a position: ')
-        if p1 not in accept_range:
+        if p1 not in acceptable_range:
             print("Invalid position")
     return int(p1)
 
@@ -30,7 +30,7 @@ def player2_input():
 
     p2 = 'wrong'
     acceptable_range = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
-    while p2.isdigit() == False or p2 not in accept_range:
+    while p2.isdigit() == False or p2 not in acceptable_range:
         p2 = input('Player 2\'s turn. Choose a position: ')
         if p2 not in acceptable_range:
             print("Invalid position")
